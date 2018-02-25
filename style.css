@@ -1,0 +1,29 @@
+#container {
+    display: flex;
+    flex-direction: row;
+    font-size: 28px;
+   text-align: center;
+}
+.col {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column-reverse;
+    flex: 1;
+    height: 75vh;
+}
+.row {
+    border: 1px solid black;
+    height: 16%;
+    margin: 2px;
+    border-radius: 50%;
+}
+.row:hover {
+    background: grey;
+}
+.red {
+    background-color: red;
+}
+.black {
+    background-color: black;
+}
+
