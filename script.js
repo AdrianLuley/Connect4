@@ -89,7 +89,8 @@ function checkWinner() {
                 }
 
                 
-            } else if (cell !== 0) {
+            } 
+            if (cell !== 0) {
                 var vertical = [
                     (board[x] || [])[y + 1],
                     (board[x] || [])[y + 2],
@@ -100,7 +101,8 @@ function checkWinner() {
                 if (vertical) {
                     return cell;
                 }
-            } else if (cell !== 0) {
+            }
+            if (cell !== 0) {
                 var diagonalRight = [
                     (board[x + 1] || [])[y + 1],
                     (board[x + 2] || [])[y + 2],
@@ -111,7 +113,8 @@ function checkWinner() {
                 if (diagonalRight) {
                     return cell;
                 }
-            } else if (cell !== 0) {
+            } 
+            if (cell !== 0) {
                 var diagonalLeft = [
                     (board[x - 1] || [])[y - 1],
                     (board[x - 2] || [])[y - 2],
